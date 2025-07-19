@@ -1,0 +1,68 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE PLUGIN>
+
+<PLUGIN 
+  name="unraid-storcli"
+  author="Derek Kaser"
+  version="0.0.1"
+  
+  pluginURL="https://raw.githubusercontent.com/dkaser/unraid-storcli/main/plugin/unraid-storcli.plg"
+  support="https://forums.unraid.net/topic/192112-plugin-storcli64/"
+  min="7.0.0"
+  
+  icon="microchip"
+>
+
+<CHANGES>
+<![CDATA[
+
+### 0.0.1
+
+Test release
+
+
+For older releases, see https://github.com/dkaser/unraid-storcli/releases
+]]>
+</CHANGES>
+
+<FILE Name="/boot/config/plugins/unraid-storcli/unraid-storcli-0.0.1-noarch-1.txz">
+<URL>https://github.com/dkaser/unraid-storcli/releases/download/0.0.1/unraid-storcli-0.0.1-noarch-1.txz</URL>
+<SHA256>b49ffed0a7a1f569e0c123529434e733ab88dac1a23a356d05117947e61602f7</SHA256>
+</FILE>
+
+<!--
+The 'install' script.
+-->
+<FILE Run="/bin/bash">
+<INLINE>
+<![CDATA[
+upgradepkg --install-new /boot/config/plugins/unraid-storcli/unraid-storcli-0.0.1-noarch-1.txz
+
+# cleanup old versions
+rm -f $(ls /boot/config/plugins/unraid-storcli/unraid-storcli-*.txz 2>/dev/null | grep -v '0.0.1')
+
+echo ""
+echo "----------------------------------------------------"
+echo " unraid-storcli has been installed."
+echo " Version: 0.0.1"
+echo "----------------------------------------------------"
+echo ""
+]]>
+</INLINE>
+</FILE>
+
+<!--
+The 'remove' script.
+-->
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+<![CDATA[
+removepkg unraid-storcli
+
+rm -rf /usr/local/emhttp/plugins/unraid-storcli
+rm -rf /boot/config/plugins/unraid-storcli
+]]>
+</INLINE>
+</FILE>
+
+</PLUGIN>
