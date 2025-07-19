@@ -1,9 +1,9 @@
-                      |-----handy-ruler------------------------------------------------------|
-unraid-plugin-template: unraid-plugin-template
-unraid-plugin-template:
-unraid-plugin-template: Sample slack-desc file
-unraid-plugin-template: 
-unraid-plugin-template: 
-unraid-plugin-template:
-unraid-plugin-template: https://github.com/dkaser/unraid-plugin-template
-unraid-plugin-template:
+              |-----handy-ruler------------------------------------------------------|
+unraid-storcli: unraid-storcli
+unraid-storcli:
+unraid-storcli: Management tool for MegaRAID adapters.
+unraid-storcli: 
+unraid-storcli: Packaged from:
+unraid-storcli: https://www.broadcom.com/support/download-search?dk=storcli
+unraid-storcli: 
+unraid-storcli: https://github.com/dkaser/unraid-storcli

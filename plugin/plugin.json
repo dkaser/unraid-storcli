@@ -1,9 +1,8 @@
 {
-    "name": "plugin-name",
-    "package_name": "unraid-plugin-template",
-    "author": "Your Name",
+    "name": "unraid-storcli",
+    "package_name": "unraid-storcli",
+    "author": "Derek Kaser",
     "min": "7.0.0",
-    "icon": "folder",
-    "support": "https://...",
-    "launch": "Tools/Something"
+    "icon": "microchip",
+    "support": "https://forums.unraid.net/topic/192112-plugin-storcli64/"
 }
