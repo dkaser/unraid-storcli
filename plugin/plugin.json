@@ -1,5 +1,5 @@
 {
-    "name": "unraid-storcli",
+    "name": "storcli",
     "package_name": "unraid-storcli",
     "author": "Derek Kaser",
     "min": "7.0.0",
