@@ -4,7 +4,7 @@
 <PLUGIN 
   name="storcli"
   author="Derek Kaser"
-  version="0.0.3"
+  version="2025.07.19"
   
   pluginURL="https://raw.githubusercontent.com/dkaser/unraid-storcli/main/plugin/storcli.plg"
   support="https://forums.unraid.net/topic/192112-plugin-storcli64/"
@@ -16,18 +16,18 @@
 <CHANGES>
 <![CDATA[
 
-### 0.0.3
+### 2025.07.19
 
-Test release
+Fix: add symbolic link for storcli
 
 
 For older releases, see https://github.com/dkaser/unraid-storcli/releases
 ]]>
 </CHANGES>
 
-<FILE Name="/boot/config/plugins/storcli/unraid-storcli-0.0.3-noarch-1.txz">
-<URL>https://github.com/dkaser/unraid-storcli/releases/download/0.0.3/unraid-storcli-0.0.3-noarch-1.txz</URL>
-<SHA256>8fb2c9a5e227f4500627bc9a75a9a04df1a877e1e5d4d212a27fc9dcbdab44e6</SHA256>
+<FILE Name="/boot/config/plugins/storcli/unraid-storcli-2025.07.19-noarch-1.txz">
+<URL>https://github.com/dkaser/unraid-storcli/releases/download/2025.07.19/unraid-storcli-2025.07.19-noarch-1.txz</URL>
+<SHA256>5e51df51c839fcf13ecb08b2e3487649e60b447e749c7875ddcab7cc47ac5941</SHA256>
 </FILE>
 
 <!--
@@ -36,15 +36,15 @@ The 'install' script.
 <FILE Run="/bin/bash">
 <INLINE>
 <![CDATA[
-upgradepkg --install-new /boot/config/plugins/storcli/unraid-storcli-0.0.3-noarch-1.txz
+upgradepkg --install-new /boot/config/plugins/storcli/unraid-storcli-2025.07.19-noarch-1.txz
 
 # cleanup old versions
-rm -f $(ls /boot/config/plugins/storcli/unraid-storcli-*.txz 2>/dev/null | grep -v '0.0.3')
+rm -f $(ls /boot/config/plugins/storcli/unraid-storcli-*.txz 2>/dev/null | grep -v '2025.07.19')
 
 echo ""
 echo "----------------------------------------------------"
 echo " storcli has been installed."
-echo " Version: 0.0.3"
+echo " Version: 2025.07.19"
 echo "----------------------------------------------------"
 echo ""
 ]]>
