@@ -1,0 +1,1 @@
+( cd usr/local/bin ; ln -sf /usr/local/bin/storcli64 storcli )
