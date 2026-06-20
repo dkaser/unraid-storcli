@@ -20,7 +20,7 @@ jobs:
           npm install -g commitlint
           npm install -g "@commitlint/config-conventional"
 
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
